@@ -1,0 +1,88 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+#menu{
+	background-color: #000;
+	height: 100px;
+	display: flex;
+	flex-flow: space-between;
+	align-items: center;
+	color: #eee;
+	font-family: 'Dandelion';
+	font-size: 25px;
+}
+#left-menu{
+	order: 1;
+	flex-grow: 3;
+	display: flex;
+}
+
+.left-menu-item{
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+#logo{
+	order: 2;
+	flex-grow: 1;
+
+}
+#right-menu{
+	order: 3;
+	flex-grow: 3;
+	display: flex;
+	direction: rtl;
+	
+}
+.right-menu-item{
+	cursor: pointer;
+	padding: 10px;
+	margin: 10px;
+}
+#main{
+    background-image: url("media\\2.jpg");
+    height: 750px;
+    background-size: cover;
+}
+
+#searchBox{
+    padding-top: 300px;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+}
+.searchBox-text{
+	order: 1;
+	width: 600px;
+	height: 40px;
+	background-color: #fff;
+	border: 1px solid #6994AE;
+	font-family: 'Anjelika';
+	font-size: 30px;
+	padding: 10px;
+}
+.serachIcon{
+	background-image: url("media\\search.png");
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    border: 1px solid #6994AE;
+    order: 2;
+    cursor: pointer;
+}
+#footer{
+	background-color:#000;
+	height: 300px;
+}
+
+@font-face{
+	font-family: "Dandelion";
+	src :url("font\\Dandelion in the Spring.ttf");
+}
+
+@font-face{
+	font-family: "Anjelika";
+	src :url("font\\Anjelika Rose.ttf");
+}
