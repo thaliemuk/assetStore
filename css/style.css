@@ -11,6 +11,7 @@ body{
 	color: #eee;
 	font-family: 'Dandelion';
 	font-size: 25px;
+	font-weight: bold;
 }
 #left-menu{
 	order: 1;
@@ -19,14 +20,15 @@ body{
 }
 
 .left-menu-item{
-	padding: 10px;
-	margin: 10px;
+	margin: 10px 20px;
 	cursor: pointer;
 }
 
 #logo{
 	order: 2;
 	flex-grow: 1;
+	font-size: 50px;
+	font-weight: bold;
 
 }
 #right-menu{
@@ -40,6 +42,10 @@ body{
 	cursor: pointer;
 	padding: 10px;
 	margin: 10px;
+
+}
+.right-menu-item:hover{
+	color: #eee;
 }
 #main{
     background-image: url("media\\2.jpg");
@@ -56,7 +62,7 @@ body{
 .searchBox-text{
 	order: 1;
 	width: 600px;
-	height: 40px;
+	height: 60px;
 	background-color: #fff;
 	border: 1px solid #6994AE;
 	font-family: 'Anjelika';
@@ -73,7 +79,7 @@ body{
     cursor: pointer;
 }
 #footer{
-	background-color:#000;
+	background-color:#fff;
 	height: 300px;
 }
 
@@ -85,4 +91,47 @@ body{
 @font-face{
 	font-family: "Anjelika";
 	src :url("font\\Anjelika Rose.ttf");
+}
+
+
+/*gallery*/
+#gallery{
+	background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.galleryDescription{
+	color: #000;
+	font-family: "Dandelion";
+	font-size: 50px;
+	text-align: center;
+}
+.gallery-item-container{
+	    width: 300px;
+    padding: 20px;
+    border: 1px solid #6994AE;
+    margin: 20px;
+
+
+}
+.gallry-items{
+display: flex;
+flex-wrap: wrap;
+}
+.gallery-item-container .details{
+	visibility: hidden;
+	position: absolute;
+    top: 50px;
+}
+}
+.gallery-item-container:hover .details{
+	visibility: visible;
+}
+
+.gallery-item{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+	
 }

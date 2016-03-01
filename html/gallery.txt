@@ -1,5 +1,0 @@
-<div class="gallery">
-	{{#galleryItem}}
-		<div class="gallery-item"></div>
-	{{/galleryItem}}
-</div>
