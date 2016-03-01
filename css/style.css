@@ -135,3 +135,10 @@ flex-wrap: wrap;
     background-size: contain;
 	
 }
+
+
+/*materialize override*/
+footer.page-footer{
+	background-color: #000;
+
+}
