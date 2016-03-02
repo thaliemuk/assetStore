@@ -12,6 +12,10 @@
 		{{/price}}
 		    <div class="card-image waves-effect waves-block waves-light">
 		      <img class="activator" src="{{{thumbnail}}}">
+		      {{#isVideo}}
+		      <img class="video" src="css\media\backgrounds\video.png">
+
+		      {{/isVideo}}
 		    </div>
 		    <div class="card-content">
         	<span class="price right ">{{#price}}{{price}}{{/price}}{{^price}}0 ${{/price}}</span>

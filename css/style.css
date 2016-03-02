@@ -51,7 +51,7 @@ body{
 .background{
     height: 700px;
     z-index: 1;
-    background-image: url('media/backgrounds/HP_01.jpg');
+    background-image: url('media/backgrounds/1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -137,6 +137,13 @@ flex-wrap: wrap;
 }
 .gallery-item-container .card .card-reveal{
 	z-index: 3;
+}
+.card .card-image img.video{
+    position: absolute;
+    z-index: 4;
+    width: 50%;
+    left: 20%;
+    top: 10%;
 }
 
 
