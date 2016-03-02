@@ -1,0 +1,8 @@
+{
+  "componentType": "Text-mc-option-menu",
+  "data": {
+    "toolbar": "mcOption",
+    "placeholderText": "enter text to the mc option",
+    "html": "<p class=\"fr-tag\">this is wrong</p>"
+  }
+}

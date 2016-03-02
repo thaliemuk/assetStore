@@ -1,0 +1,19 @@
+{
+  "userId": "c8ba6ff7-e9b7-4e6a-b7b7-c73718c87efd",
+  "taskId": "7ea93889-db3b-40d4-991b-3e6666d2aa61",
+  "taskVersion": "0.1",
+  "data": {
+    "score": 0,
+    "maxAttempts": 1,
+    "currentAttempt": 0,
+    "progressState": "not_interacted"
+  },
+  "components": [
+    {
+      "selectedAnswers": [
+        "671e9382-eb8d-441e-bdc9-a1c41d99a983", "f623e546-e9cd-4c8e-9d14-c906c6a62824", "36267469-439c-4384-9d4d-196660752152"
+      ],
+      "cid": "deff8d5a-f668-48c3-b87e-de7ae8ae3f58"
+    }
+  ]
+}

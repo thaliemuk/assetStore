@@ -1,0 +1,90 @@
+{
+  "type": "Task",
+  "cId": "4978089f-1b01-4b3c-aa0e-59c00f1d12ad",
+  "name": "My Task",
+  "components": [
+    {
+      "componentType": "Question",
+      "cId": "b460719b-ba1f-4ee2-aedf-f0683dea509f",
+      "data": {
+        "toolbar": "full",
+        "placeholderText": "Enter your question here",
+        "html": "<p class=\"fr-tag\">Here is my question</p>"
+      }
+    },
+    {
+      "componentType": "MC",
+      "cId": "f20c90dd-7ae1-43bb-add1-ac65869e7df7",
+      "data": {
+        "mode": "single",
+        "answersType": "Text",
+        "correntAnswersIds": [
+          "923bf87f-a8cc-9405-2696-c12d59f34d8f"
+        ]
+      },
+      "components": [
+        {
+          "componentType": "MCOption",
+          "cId": "2c081804-351d-4c2d-9039-7e98fed2780b",
+          "data": {
+            "mode": "single",
+            "name": "9612865a-7ff5-1e3c-88fc-cc99e56d9b1f"
+          },
+          "components": [
+            {
+              "componentType": "Text-mc-option-menu",
+              "cId": "daacceb8-5319-4e20-96e8-edd9c7bf485a",
+              "data": {
+                "toolbar": "mcOption",
+                "placeholderText": "enter text to the mc option",
+                "html": "<p class=\"fr-tag\">this is wrong</p>"
+              }
+            }
+          ]
+        },
+        {
+          "componentType": "MCOption",
+          "cId": "7a5594d2-078b-41af-b5d3-6f1e39a81856",
+          "data": {
+            "mode": "single",
+            "name": "9612865a-7ff5-1e3c-88fc-cc99e56d9b1f"
+          },
+          "components": [
+            {
+              "componentType": "Text-mc-option-menu",
+              "cId": "81b1d3e5-e07b-4869-a5d1-4829219449e0",
+              "data": {
+                "toolbar": "mcOption",
+                "placeholderText": "enter text to the mc option",
+                "html": "<p class=\"fr-tag\">that's not true</p>"
+              }
+            }
+          ]
+        },
+        {
+          "componentType": "MCOption",
+          "cId": "e40b56b5-69e5-469a-90b8-102146765d07",
+          "data": {
+            "mode": "single",
+            "name": "9612865a-7ff5-1e3c-88fc-cc99e56d9b1f"
+          },
+          "components": [
+            {
+              "componentType": "Text-mc-option-menu",
+              "cId": "92d01caa-aa7c-4b90-8e21-1c5ea89af35b",
+              "data": {
+                "toolbar": "mcOption",
+                "placeholderText": "enter text to the mc option",
+                "html": "<p class=\"fr-tag\">thats false</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentType": "Feedback",
+      "cId": "30a4cf3c-0ce5-4540-8a58-08ae80a0eb27"
+    }
+  ]
+}

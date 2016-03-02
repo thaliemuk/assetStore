@@ -1,0 +1,28 @@
+##############
+#  Frontend  #
+##############
+
+frontend/node_modules/
+frontend/dist/
+.sass-cache/
+frontend/app/scripts/components/imagePlay/bundle.js
+frontend/bundledTests/
+
+#############
+#  Backend  #
+#############
+
+.idea/
+
+.classpath
+.project
+.settings
+.DS_Store
+
+out/
+target/
+*.iml
+
+webapp/
+!webapp/WEB-INF
+!webapp/index.jsp

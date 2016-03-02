@@ -1,0 +1,19 @@
+{
+  "componentType": "MCOption",
+  "cId": "5b90b5a2-7967-4065-92ae-40aa3eb11fc6",
+  "data": {
+    "mode": "single",
+    "name": "9612865a-7ff5-1e3c-88fc-cc99e56d9b1f"
+  },
+  "components": [
+    {
+      "componentType": "Text-mc-option-menu",
+      "cId": "aa47c05b-7d4d-47fe-85f8-a1e3434c2342",
+      "data": {
+        "toolbar": "mcOption",
+        "placeholderText": "enter text to the mc option",
+        "html": "<p class=\"fr-tag\">this is right!</p>"
+      }
+    }
+  ]
+}
