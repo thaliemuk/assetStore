@@ -9,33 +9,34 @@ body{
 	flex-flow: space-between;
 	align-items: center;
 	color: #eee;
-	font-family: 'Dandelion';
+	font-family: 'Roboto';
 	font-size: 25px;
-	font-weight: bold;
 }
 #left-menu{
 	order: 1;
 	flex-grow: 3;
 	display: flex;
+	
 }
 
 .left-menu-item{
-	margin: 10px 20px;
+	margin: 0 20px;
 	cursor: pointer;
 }
 
 #logo{
-	order: 2;
+	order: 1;
 	flex-grow: 1;
-	font-size: 50px;
-	font-weight: bold;
-
+	font-size: 20px;
+	margin: 0 20px;
 }
 #right-menu{
-	order: 3;
+	order: 2;
 	flex-grow: 3;
 	display: flex;
 	direction: rtl;
+	font-family: 'Dandelion';
+	font-weight: bold;
 	
 }
 .right-menu-item{
@@ -47,10 +48,17 @@ body{
 .right-menu-item:hover{
 	color: #eee;
 }
-#main{
-    background-image: url("media\\2.jpg");
-    height: 750px;
+.background{
+    height: 700px;
+    z-index: 1;
+    background-image: url('media/backgrounds/HP_01.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
+    position: absolute;
+    width: 100%;
+}
+#main{
+	height: 700px;
 }
 
 #searchBox{
@@ -58,6 +66,8 @@ body{
     display: flex;
     justify-content: center;
     opacity: 1;
+    z-index: 2;
+    position: relative;
 }
 .searchBox-text{
 	order: 1;
@@ -83,15 +93,6 @@ body{
 	height: 300px;
 }
 
-@font-face{
-	font-family: "Dandelion";
-	src :url("font\\Dandelion in the Spring.ttf");
-}
-
-@font-face{
-	font-family: "Anjelika";
-	src :url("font\\Anjelika Rose.ttf");
-}
 
 
 /*gallery*/
@@ -108,12 +109,8 @@ body{
 	text-align: center;
 }
 .gallery-item-container{
-	    width: 300px;
-    padding: 20px;
-    border: 1px solid #6994AE;
+	width: 300px;
     margin: 20px;
-
-
 }
 .gallry-items{
 display: flex;
@@ -129,11 +126,17 @@ flex-wrap: wrap;
 	visibility: visible;
 }
 
-.gallery-item{
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-	
+.gallery-item-container .badge{
+	z-index: 2;
+}
+.gallery-item-container .badge.logo{
+    position: absolute;
+    background-color: #eee;
+    opacity: 0.8;
+    border-radius: 2px;
+}
+.gallery-item-container .card .card-reveal{
+	z-index: 3;
 }
 
 
@@ -141,4 +144,19 @@ flex-wrap: wrap;
 footer.page-footer{
 	background-color: #000;
 
+}
+
+/*fonts*/
+@font-face{
+	font-family: "Dandelion";
+	src :url("font\\Dandelion in the Spring.ttf");
+}
+
+@font-face{
+	font-family: "Anjelika";
+	src :url("font\\Anjelika Rose.ttf");
+}
+@font-face{
+	font-family: "Roboto";
+	src :url("font\\Roboto-Regular.ttf");
 }

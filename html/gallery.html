@@ -2,16 +2,24 @@
 <div class="gallry-items">
 	
 {{#galleryData}}
-	<div class="gallery-item-container hoverable">
-		<div class="card small">
+	<div class="gallery-item-container ">
+		<div class="card small hoverable">
+		<div class="badge left logo">
+		    <img src="css/media/logos/{{source}}.png" alt="{{source}}">
+		  </div>
+		{{^price}}
+		<span class="badge light-green white-text">Free</span>
+		{{/price}}
 		    <div class="card-image waves-effect waves-block waves-light">
 		      <img class="activator" src="{{{thumbnail}}}">
 		    </div>
 		    <div class="card-content">
-		      <span class="card-title activator grey-text text-darken-4">{{name}}<i class="material-icons right">more_vert</i></span>
-		      <p><a href="#">download</a></p>
+        	<span class="price right ">{{#price}}{{price}}{{/price}}{{^price}}0 ${{/price}}</span>
+		      <span class="card-title activator grey-text text-darken-4">{{name}}</span>
+		      
 		    </div>
 		    <div class="card-reveal">
+		    <p></p>
 		      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
 		      <p>Here is some more information about this product that is only revealed once clicked on.</p>
 		    </div>
